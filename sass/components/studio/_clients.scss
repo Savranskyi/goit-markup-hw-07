@@ -1,0 +1,23 @@
+.clients__list {
+  display: flex;
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link {
+  @include centredFlex;
+  flex-direction: row;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  fill: $icons-color;
+  border: 1px solid $icons-color;
+  transition: fill $transition-duration $transition-function,
+    border $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
