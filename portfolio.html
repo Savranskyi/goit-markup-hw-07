@@ -26,7 +26,7 @@
       <!-- navigation section -->
       <div class="container">
         <nav class="site-navigation">
-          <a class="logo" href="./index.html">Web<span class="logo--header">Studio</span></a>
+          <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
           <ul class="site-navigation__list">
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="./index.html">Студия</a>
@@ -56,7 +56,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
-                <use contacts__icon href="./images/icons.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -265,7 +265,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-address">
-          <a class="logo" href="/">Web<span class="logo-footer">Studio</span></a>
+          <a class="logo" href="/">Web<span class="logo__footer">Studio</span></a>
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
@@ -281,31 +281,47 @@
           </address>
         </div>
         <div class="footer-socials">
-          <h3 class="socials__title">Присоединяйтесь</h3>
-          <ul class="footer-socials">
+          <h3 class="footer-socials__title">Присоединяйтесь</h3>
+          <ul class="socials">
             <li class="socials__item">
-              <a href="https://instagram.com/" target="_blank" class="socials__link">
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                class="socials__link socials__link--footer"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://twitter.com/" target="_blank" class="socials__link">
-                <svg class="social-icon" width="20" height="20">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="socials__link socials__link--footer"
+              >
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://facebook.com/" target="_blank" class="socials__link">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="socials__link socials__link--footer"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://linkedin.com/" target="_blank" class="socials__link">
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                class="socials__link socials__link--footer"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -313,7 +329,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h3 class="footer-subscribe__title">подпишитесь на рассылку</h3>
+          <form autocomplete="off" class="footer-subscribe__form">
+            <input
+              type="email"
+              class="footer-subscribe__input"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-subscribe__button">
+              Подписаться
+              <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

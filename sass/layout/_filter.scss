@@ -1,0 +1,8 @@
+.filter-list {
+  @include centredFlex;
+  padding-bottom: 50px;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
